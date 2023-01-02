@@ -1,0 +1,21 @@
+server:
+  port: 9501
+  servlet:
+    context-path: /MicroService1
+
+spring:
+  application:
+    name: DEPARTMENT-SERVICES
+  datasource:
+    url: jdbc:postgresql://localhost:5432/VishalDB
+    username: postgres
+    password: Vishal@91289
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  
+  instance:
+    hostname: localhost
